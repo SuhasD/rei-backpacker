@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>REI Backpacker</title>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+
+   <body>
+      <div class="container">
+        <!-- Branding and Product Intro -->
+         <div class='logo_container'><img src="images/logo.png" class='img-responsive' alt="REI Logo" id="logo"></img></div>
+         <h1 id="product">Welcome to REI Backpacker!</h1>
+         <h2 id='title'> Upload <span id="second"> an </span> image and we'll tell you what to pack. </h2>
+         <!-- Container to upload and preview image -->
+         <div class='uploadContainer'>
+            <input class="button" type="file" capture="camera" accept="image/*" id="imageBtn">
+            <button class='btn btn-primary' id="visibleLabel"  for="file">Upload an Image</button>
+         </div>
+         <img src="" class="img-responsive" id="preview" alt="Image preview...">
+         <div class="predict">
+            <p> You seem to be packing to go to <span id="predictedPlace"></span></p>
+         </div>
+         <!-- Products Listing here -->
+         <div id="REIproducts">
+         </div>
+      </div>
+      <!-- Overlay and loader -->
+      <div id="overlay"></div>
+      <svg class="spinner" viewBox="0 0 50 50">
+         <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+      </svg>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
+</html>

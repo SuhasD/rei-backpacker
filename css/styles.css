@@ -1,0 +1,211 @@
+/*Normalize CSS for Cross browser support. More goes in here*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+.logo_container {
+	width: 150px;
+	margin: auto;
+	margin-top: 23px;
+}
+
+#product {
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+}
+
+#title {
+	font-size: 16px;
+	text-align: center;
+	font-weight: 400;
+}
+
+#imageBtn {
+	display: none;
+}
+
+#preview {
+	display: none;
+}
+
+#preview.shown {
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	border: 1px solid #afacac;
+	border-radius: 5px;
+}
+
+.resultsTitle {
+	text-align: center;
+}
+
+.predict {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 16px;
+	display: none;
+}
+
+.predict.shown {
+	display: block;
+}
+
+.resultsTitle.shown {
+	display: block;
+}
+
+#predictedPlace {
+	font-weight: 500;
+}
+
+.uploadContainer {
+	margin: auto;
+	text-align: center;
+}
+
+#visibleLabel {
+	color: #000;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+
+
+/*Product styles*/
+
+.prod {
+	width: 100%;
+	border-radius: 4px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.prod img {
+	vertical-align: middle;
+	width: 50%;
+	display: block;
+	margin: auto;
+	padding: 8px;
+	border-bottom: 1px solid #a8a8a8;
+}
+
+.prod p {
+	margin-bottom: 0;
+	color: black;
+}
+
+.prod_name {
+	font-weight: 500;
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+
+p.sentiment {
+	text-transform: capitalize;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+/*Overlay and loader*/
+
+#overlay.shown {
+	display: block;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.7;
+	position: fixed;
+	top: 0;
+	display: none;
+}
+
+#error {
+	color: red;
+	text-align: center;
+}
+
+.spinner.shown {
+	display: block;
+}
+
+.spinner {
+	display: none;
+	-webkit-animation: rotate 2s linear infinite;
+	animation: rotate 2s linear infinite;
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	width: 50px;
+	height: 50px;
+}
+
+.spinner .path {
+	stroke: #93bfec;
+	stroke-linecap: round;
+	-webkit-animation: dash 1.5s ease-in-out infinite;
+	animation: dash 1.5s ease-in-out infinite;
+}
+
+/*SVG loader animation*/
+
+@-webkit-keyframes rotate {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes dash {
+	0% {
+		stroke-dasharray: 1, 150;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 90, 150;
+		stroke-dashoffset: -35;
+	}
+	100% {
+		stroke-dasharray: 90, 150;
+		stroke-dashoffset: -124;
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1, 150;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 90, 150;
+		stroke-dashoffset: -35;
+	}
+	100% {
+		stroke-dasharray: 90, 150;
+		stroke-dashoffset: -124;
+	}
+}
