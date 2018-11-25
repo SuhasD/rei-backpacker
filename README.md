@@ -1,6 +1,10 @@
 # rei-backpacker
 A Responsive web application that suggests users what to pack based on the uploaded picture. The image is analyzed by Einstein Vision API and appropriate products are fetched from REI. Einstein also reads the product reviews and displays the average sentiment of the user reviews for each product. 
 
+Website - https://suhasd.com/rei-backpacker/
+
+*Please use Allow-Control-Allow-Origin: * (v1.0.3) Google Chrome plugin to run this example*
+
 ## Part 1 - Ideation
 ### Problem: 
 
@@ -50,3 +54,6 @@ Hence, I used jQuery for quick prototyping along with Chrome extension **Allow-C
 4. Implement using better technical stack.
 5. Get rid of hardcoded user reviews examples
 6. Get actual reviews for each product and run Einstein Sentiment API
+
+Website for demo - https://suhasd.com/rei-backpacker/
+
