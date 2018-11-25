@@ -31,3 +31,22 @@ Application landing             |  Essential Products
 User Sentiment from reviews       |  No results
 :-------------------------:|:-------------------------:
 ![](images/7.png)  |  ![](images/8.png)
+
+### Technical Stack:
+
+1. **jQuery** for quick prototyping
+2. **Bootstrap** for Responsive UI
+3. **AJAX** for Webservices interaction
+
+I tried to implement the application with **React JS in Progressive Web Application standard** but I faced the challenge of CORS (Cross Origin Resource Sharing) as I was making requests from front-end. I spent considerable amount of time in setting up **backend server using NodeJS and ExpressJS.** Even then, I could not resolve CORS issue.
+
+Hence, I used jQuery for quick prototyping along with Chrome extension **Allow-Control-Allow-Origin: * (v1.0.3)** to run on **Google Chrome with responsive design mode.** Please use the same plugin to validate the application for now.
+
+## Improvements
+
+1. Implement backend server to handle CORS issue
+2. Improve performance by getting rid of async:false
+3. Train dataset with inputs from Predict API to give better suggestion from REI
+4. Implement using better technical stack.
+5. Get rid of hardcoded user reviews examples
+6. Get actual reviews for each product and run Einstein Sentiment API
