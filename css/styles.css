@@ -13,6 +13,12 @@ html, body {
 	overflow-x: hidden;
 }
 
+/*Adding desktop support*/
+.container{
+	max-width:460px;
+	margin:auto;
+}
+
 .logo_container {
 	width: 150px;
 	margin: auto;
